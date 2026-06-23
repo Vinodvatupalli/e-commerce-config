@@ -1,6 +1,6 @@
 spring:
   application:
-    name: jwt-service
+    name: jwt-auth-service
 
 server:
   port: 8081
