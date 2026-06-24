@@ -1,6 +1,5 @@
 server:
   port: 8082
-
 spring:
   application:
     name: product-service
@@ -20,6 +19,14 @@ spring:
     properties:
       hibernate:
         format_sql: true
+  cloud:
+    config:
+      fail-fast: true
+      retry:
+        max-attempts: 10
+        initial-interval: 2000
+        multiplier: 1.5
+        max-interval: 5000
 eureka:
   client:
     service-url:
