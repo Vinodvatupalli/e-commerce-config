@@ -5,7 +5,7 @@ spring:
   application:
     name: product-service
   datasource:
-    url: jdbc:mysql://mysql:3306/test
+    url: jdbc:mysql://mysql:3306/ecommerce
     username: vinod
     password: vinod
   data:
