@@ -30,9 +30,14 @@ resilience4j:
         wait-duration-in-open-state: 10s
 
         permitted-number-of-calls-in-half-open-state: 2
-    resilience4j:
   retry:
     instances:
       productRetry:
         max-attempts: 3
-        wait-duration: 2s 
+        wait-duration: 2s
+  ratelimiter:
+    instances:
+      productLimiter:
+        limit-for-period: 5
+        limit-refresh-period: 60s
+        timeout-duration: 0
