@@ -56,5 +56,5 @@ resilience4j:
         max-wait-duration: 0
   timelimiter:
     instances:
-      productTimeout:
+      loginTimeout:
         timeout-duration: 2s
