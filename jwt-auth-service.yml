@@ -45,7 +45,7 @@ resilience4j:
         wait-duration: 2s
   ratelimiter:
     instances:
-      jwtLimiter:
+      loginLimiter:
         limit-for-period: 5
         limit-refresh-period: 60s
         timeout-duration: 0
