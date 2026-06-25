@@ -46,3 +46,12 @@ resilience4j:
         wait-duration-in-open-state: 10s
 
         permitted-number-of-calls-in-half-open-state: 2
+
+management:
+  tracing:
+    sampling:
+      probability: 1.0
+
+  zipkin:
+    tracing:
+      endpoint: http://zipkin:9411/api/v2/spans
