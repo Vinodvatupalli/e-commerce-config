@@ -54,3 +54,7 @@ resilience4j:
       loginBulkhead:
         max-concurrent-calls: 5
         max-wait-duration: 0
+  timelimiter:
+    instances:
+      productTimeout:
+        timeout-duration: 2s
