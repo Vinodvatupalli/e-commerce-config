@@ -80,3 +80,6 @@ management:
     metrics:
       export:
         enabled: true
+  otlp:
+    tracing:
+      endpoint: http://tempo:4317
