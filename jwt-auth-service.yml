@@ -82,7 +82,7 @@ management:
         enabled: true
   otlp:
     tracing:
-      endpoint: grpc://tempo:4317
+      endpoint: http://tempo:4318/v1/traces
 logging:
   level:
     io.opentelemetry: DEBUG
