@@ -83,3 +83,7 @@ management:
   otlp:
     tracing:
       endpoint: http://tempo:4317
+logging:
+  level:
+    io.opentelemetry: DEBUG
+    io.micrometer.tracing: DEBUG
