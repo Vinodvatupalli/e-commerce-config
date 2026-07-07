@@ -87,6 +87,7 @@ logging:
   level:
     io.opentelemetry: DEBUG
     io.micrometer.tracing: DEBUG
+    
   kafka:
 
     bootstrap-servers: kafka:9092
